@@ -14,11 +14,25 @@
     <header>
         <!--<img src="content/wired-brain-coffee-logo.png" alt="Wired Brain Coffee Logo" height="150px" width="150px" />
         -->
-        <img style="float: left" src="content/wired-brain-coffee-logo-250.png" alt="Wired Brain Coffee Logo" />
-        <a href="https://pluralsight.com/" target="_blank" rel="noreferrer noopener">
-            <h1>Wired Brain Coffee</h1>
-            <h2>Coffee to keep your brain wired</h2>
-        </a>
+        <picture style="float: left">
+            <source type="image/jpeg"
+                srcset="content/wired-brain-coffee-logo-250.jpg 250w, content/wired-brain-coffee-logo.jpg 500w"
+                sizes="(max-width: 500px) 15vw, 25vw" />
+
+            <source type="image/png"
+                srcset="content/wired-brain-coffee-logo-250.png 250w, content/wired-brain-coffee-logo.png 500w"
+                sizes="(max-width: 500px) 15vw, 25vw" />
+
+            <img src="content/wired-brain-coffee-logo.png" alt="Wired Brain Coffee Logo" />
+        </picture>
+
+        <div style="float: left; margin-left: 15px">
+            <a href="https://pluralsight.com/" target="_blank" rel="noreferrer noopener">
+                <h1>Wired Brain Coffee</h1>
+                <h2>Coffee to keep your brain wired</h2>
+            </a>
+        </div>
+        <div style="clear: both;" />
 
         <nav>
             <ul>
